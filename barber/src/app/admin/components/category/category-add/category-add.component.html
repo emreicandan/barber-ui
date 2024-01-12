@@ -1,0 +1,29 @@
+
+<!-- Create Modal example -->
+<div class="modal fade create-category-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="card shadow-none border-0 p-3 pb-0">
+                <div class="card-title">
+                    <h4>Create Category</h4>
+                </div>
+                    <form  [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label class="form-label" for="first-name-input">Id</label>
+                            <input type="text" class="form-control" formControlName="id" id="id-input">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="last-name-input">Name</label>
+                            <input type="text" class="form-control" formControlName="Name" id="name-input">
+                        </div>
+
+                        <div class="">
+                            <button class="btn btn-warning d-block ms-auto">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+</div><!-- /.modal-dialog -->
+
